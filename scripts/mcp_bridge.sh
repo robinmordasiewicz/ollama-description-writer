@@ -1,6 +1,6 @@
 #!/bin/bash
-# MCP Bridge for f5xc-api-mcp → vLLM integration
-# Bridges stdio-based MCP server to HTTP SSE for vLLM's --tool-server
+# MCP Server for f5xc-api-mcp → vLLM integration
+# Uses native HTTP/SSE mode with SSEServerTransport for vLLM's --tool-server
 #
 # Usage: ./scripts/mcp_bridge.sh [start|stop|restart|status|logs|help]
 
@@ -31,7 +31,7 @@ log_error() {
 }
 
 get_pid() {
-    pgrep -f "mcp-proxy.*f5xc-api-mcp" 2>/dev/null || true
+    pgrep -f "f5xc-api-mcp.*--http.*${PORT}" 2>/dev/null || true
 }
 
 wait_for_bridge() {
@@ -95,18 +95,15 @@ start_bridge() {
         return 1
     fi
 
-    # Build mcp-proxy command with optional credentials
+    # Start f5xc-api-mcp with native HTTP/SSE mode (uses SSEServerTransport)
     if [ -n "$F5XC_API_URL" ] && [ -n "$F5XC_API_TOKEN" ]; then
         log_info "F5XC credentials detected - enabling execution mode"
         log_info "Tenant: $F5XC_API_URL"
-        # Use --pass-environment to pass F5XC_* vars to the spawned process
         nohup env F5XC_API_URL="$F5XC_API_URL" F5XC_API_TOKEN="$F5XC_API_TOKEN" \
-            mcp-proxy --port ${PORT} --pass-environment -- \
-            node ${F5XC_MCP_DIR}/dist/index.js > "${LOG_FILE}" 2>&1 &
+            node ${F5XC_MCP_DIR}/dist/index.js --http --port ${PORT} > "${LOG_FILE}" 2>&1 &
     else
         # Start without credentials (documentation mode)
-        nohup mcp-proxy --port ${PORT} -- \
-            node ${F5XC_MCP_DIR}/dist/index.js > "${LOG_FILE}" 2>&1 &
+        nohup node ${F5XC_MCP_DIR}/dist/index.js --http --port ${PORT} > "${LOG_FILE}" 2>&1 &
     fi
 
     local new_pid=$!
@@ -197,7 +194,7 @@ show_logs() {
 show_help() {
     echo -e "${CYAN}MCP Bridge Management Script${NC}"
     echo ""
-    echo "Bridges f5xc-api-mcp (stdio) to HTTP SSE for vLLM integration"
+    echo "Runs f5xc-api-mcp in native HTTP/SSE mode for vLLM integration"
     echo ""
     echo "Usage: $0 [command]"
     echo ""

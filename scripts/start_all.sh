@@ -48,7 +48,7 @@ start_all() {
     header "Toolchain Ready"
     echo ""
     echo "Services:"
-    echo "  - MCP Bridge:  http://localhost:8080/sse (f5xc-api-mcp)"
+    echo "  - MCP Server:  http://localhost:8080/sse (f5xc-api-mcp native HTTP/SSE)"
     echo "  - vLLM Server: http://localhost:8000/v1"
     echo ""
     echo "Tools available: 1500+ F5 Distributed Cloud API tools"
