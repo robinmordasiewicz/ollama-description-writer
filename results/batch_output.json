@@ -1,0 +1,132 @@
+{
+  "results": [
+    {
+      "product": {
+        "name": "ErgoMax Pro Wireless Mouse",
+        "features": [
+          "Bluetooth 5.0 connectivity",
+          "Ergonomic contoured design",
+          "4000 DPI optical sensor",
+          "Silent click buttons",
+          "USB-C fast charging"
+        ],
+        "category": "Computer Peripherals"
+      },
+      "descriptions": {
+        "short": {
+          "tier": "short",
+          "content": "Bluetooth 5.0, ergonomic design, 4000 DPI, silent clicks, USB-C charging",
+          "char_count": 72,
+          "within_limits": true,
+          "target_range": "50-100",
+          "tokens_used": 304
+        },
+        "medium": {
+          "tier": "medium",
+          "content": "The ErgoMax Pro Wireless Mouse offers Bluetooth 5.0 connectivity and an ergonomic design. Its 4000 DPI sensor ensures precise control. Ideal for extended use to reduce strain.",
+          "char_count": 175,
+          "within_limits": true,
+          "target_range": "150-300",
+          "tokens_used": 380
+        },
+        "long": {
+          "tier": "long",
+          "content": "The ErgoMax Pro Wireless Mouse is designed to enhance user comfort and efficiency with its ergonomic contoured shape. It supports Bluetooth 5.0 for seamless wireless connectivity and features a 4000 DPI optical sensor for precise cursor control. The mouse includes silent click buttons and supports fast charging via USB-C, ensuring quick and convenient use. Ideal for professionals requiring extended periods of computer work and gamers needing precise movements.",
+          "char_count": 464,
+          "within_limits": false,
+          "target_range": "500-800",
+          "tokens_used": 379
+        }
+      },
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "timestamp": "2026-01-02T16:23:28.734478Z",
+      "all_valid": false
+    },
+    {
+      "product": {
+        "name": "CloudSync NVMe SSD 1TB",
+        "features": [
+          "PCIe 4.0 x4 interface",
+          "7000 MB/s sequential read",
+          "5000 MB/s sequential write",
+          "TLC NAND flash",
+          "DRAM cache buffer"
+        ],
+        "category": "Storage Devices"
+      },
+      "descriptions": {
+        "short": {
+          "tier": "short",
+          "content": "CloudSync NVMe SSD 1TB PCIe 4.0, 7000 MB/s read, 5000 MB/s write",
+          "char_count": 64,
+          "within_limits": true,
+          "target_range": "50-100",
+          "tokens_used": 321
+        },
+        "medium": {
+          "tier": "medium",
+          "content": "The CloudSync NVMe SSD 1TB offers PCIe 4.0 x4 interface for ultra-fast data transfer. With 7000 MB/s read speeds and 5000 MB/s write speeds, it accelerates system performance. Ideal for high-demand applications and large file transfers.",
+          "char_count": 236,
+          "within_limits": true,
+          "target_range": "150-300",
+          "tokens_used": 410
+        },
+        "long": {
+          "tier": "long",
+          "content": "The CloudSync NVMe SSD 1TB is designed for high-performance data storage with a PCIe 4.0 x4 interface supporting up to 7000 MB/s sequential read speeds and 5000 MB/s sequential write speeds. It utilizes TLC NAND flash with a DRAM cache buffer for enhanced performance and durability.\n\nThis SSD is ideal for demanding applications such as video editing, gaming, and professional software development, offering fast load times and efficient data transfer. Suitable for power users and professionals who require reliable, high-speed storage solutions.",
+          "char_count": 548,
+          "within_limits": true,
+          "target_range": "500-800",
+          "tokens_used": 414
+        }
+      },
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "timestamp": "2026-01-02T16:23:32.960261Z",
+      "all_valid": true
+    },
+    {
+      "product": {
+        "name": "AirPure HEPA Filter",
+        "features": [
+          "True HEPA H13 filtration",
+          "Activated carbon layer",
+          "360-degree air intake",
+          "Smart air quality sensor",
+          "Whisper-quiet operation"
+        ],
+        "category": "Home Appliances"
+      },
+      "descriptions": {
+        "short": {
+          "tier": "short",
+          "content": "True HEPA H13 filter with activated carbon, smart sensor, whisper-quiet.",
+          "char_count": 72,
+          "within_limits": true,
+          "target_range": "50-100",
+          "tokens_used": 298
+        },
+        "medium": {
+          "tier": "medium",
+          "content": "The AirPure HEPA Filter offers True HEPA H13 filtration with an activated carbon layer for superior air purification. Its 360-degree air intake and smart sensor ensure optimal performance. Whisper-quiet operation enhances comfort.",
+          "char_count": 230,
+          "within_limits": true,
+          "target_range": "150-300",
+          "tokens_used": 385
+        },
+        "long": {
+          "tier": "long",
+          "content": "The AirPure HEPA Filter is designed to enhance indoor air quality by capturing 99.97% of particles as small as 0.3 microns. It includes an activated carbon layer for odour removal and a smart sensor that monitors air quality in real-time. With 360-degree air intake and whisper-quiet operation, it efficiently purifies the air without disturbing your environment. Ideal for allergy sufferers and those concerned about air pollution, this filter is perfect for bedrooms, living rooms, and offices.",
+          "char_count": 496,
+          "within_limits": false,
+          "target_range": "500-800",
+          "tokens_used": 398
+        }
+      },
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "timestamp": "2026-01-02T16:23:36.494166Z",
+      "all_valid": false
+    }
+  ],
+  "total_products": 3,
+  "all_valid": false
+}

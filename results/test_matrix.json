@@ -1,0 +1,250 @@
+{
+  "start_time": "2026-01-02T12:24:42.183201",
+  "end_time": "2026-01-02T12:25:09.885025",
+  "total": 30,
+  "passed": 27,
+  "failed": 3,
+  "pass_rate": 0.9,
+  "results": [
+    {
+      "test_name": "vLLM server connection",
+      "category": "Connection",
+      "passed": true,
+      "duration_ms": 131.0257911682129,
+      "details": "Server responded",
+      "error": null
+    },
+    {
+      "test_name": "Load Balancer - short",
+      "category": "Tier Generation",
+      "passed": false,
+      "duration_ms": 262.21275329589844,
+      "details": "62 chars (target: 35-60)",
+      "error": null
+    },
+    {
+      "test_name": "Load Balancer - medium",
+      "category": "Tier Generation",
+      "passed": false,
+      "duration_ms": 393.3882713317871,
+      "details": "97 chars (target: 100-150)",
+      "error": null
+    },
+    {
+      "test_name": "Load Balancer - long",
+      "category": "Tier Generation",
+      "passed": true,
+      "duration_ms": 1354.4397354125977,
+      "details": "441 chars (target: 350-500)",
+      "error": null
+    },
+    {
+      "test_name": "API Gateway - short",
+      "category": "Tier Generation",
+      "passed": true,
+      "duration_ms": 147.93729782104492,
+      "details": "41 chars (target: 35-60)",
+      "error": null
+    },
+    {
+      "test_name": "API Gateway - medium",
+      "category": "Tier Generation",
+      "passed": true,
+      "duration_ms": 490.2989864349365,
+      "details": "149 chars (target: 100-150)",
+      "error": null
+    },
+    {
+      "test_name": "API Gateway - long",
+      "category": "Tier Generation",
+      "passed": true,
+      "duration_ms": 1396.5437412261963,
+      "details": "455 chars (target: 350-500)",
+      "error": null
+    },
+    {
+      "test_name": "generate_raw: Simple field",
+      "category": "Raw Generation",
+      "passed": true,
+      "duration_ms": 1637.9756927490234,
+      "details": "Keys: ['short', 'medium', 'long']",
+      "error": null
+    },
+    {
+      "test_name": "generate_raw: Complex field",
+      "category": "Raw Generation",
+      "passed": true,
+      "duration_ms": 2204.2829990386963,
+      "details": "Keys: ['short', 'medium', 'long']",
+      "error": null
+    },
+    {
+      "test_name": "F5XC: virtual_host_config",
+      "category": "F5XC Adapter",
+      "passed": true,
+      "duration_ms": 3526.1261463165283,
+      "details": "Valid: 1/3 | Lengths: {'short': 26, 'medium': 77, 'long': 350}",
+      "error": null
+    },
+    {
+      "test_name": "F5XC: health_check_interval",
+      "category": "F5XC Adapter",
+      "passed": true,
+      "duration_ms": 4520.528078079224,
+      "details": "Valid: 2/3 | Lengths: {'short': 26, 'medium': 111, 'long': 422}",
+      "error": null
+    },
+    {
+      "test_name": "F5XC: ssl_certificate_ref",
+      "category": "F5XC Adapter",
+      "passed": true,
+      "duration_ms": 3756.2267780303955,
+      "details": "Valid: 1/3 | Lengths: {'short': 28, 'medium': 75, 'long': 390}",
+      "error": null
+    },
+    {
+      "test_name": "Banned: Contains F5",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.07534027099609375,
+      "details": "Errors: ['Banned term: F5', 'Too short: 30 < 35 chars']",
+      "error": null
+    },
+    {
+      "test_name": "Banned: Contains API",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.06771087646484375,
+      "details": "Errors: ['Banned term: API', 'Banned term: REST', 'Banned term: Endpoint', 'Too short: 26 < 35 chars']",
+      "error": null
+    },
+    {
+      "test_name": "Banned: Contains marketing",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.06937980651855469,
+      "details": "Errors: ['Banned term: world-class', 'Too short: 31 < 35 chars']",
+      "error": null
+    },
+    {
+      "test_name": "Banned: Clean content",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.08273124694824219,
+      "details": "No errors",
+      "error": null
+    },
+    {
+      "test_name": "Limits: Short too short",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.04649162292480469,
+      "details": "2 chars, errors: ['Too short: 2 < 35 chars', 'Too few words: 1 < 3']",
+      "error": null
+    },
+    {
+      "test_name": "Limits: Short valid",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.07534027099609375,
+      "details": "45 chars, errors: []",
+      "error": null
+    },
+    {
+      "test_name": "Limits: Short too long",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.1201629638671875,
+      "details": "98 chars, errors: ['Too long: 98 > 60 chars']",
+      "error": null
+    },
+    {
+      "test_name": "Limits: Medium valid",
+      "category": "Validation Layer",
+      "passed": true,
+      "duration_ms": 0.12326240539550781,
+      "details": "111 chars, errors: []",
+      "error": null
+    },
+    {
+      "test_name": "Compliance: short (35-60)",
+      "category": "Character Limits",
+      "passed": true,
+      "duration_ms": 448.46105575561523,
+      "details": "[50\u2713, 50\u2713, 50\u2713] (3/3 valid)",
+      "error": null
+    },
+    {
+      "test_name": "Compliance: medium (100-150)",
+      "category": "Character Limits",
+      "passed": false,
+      "duration_ms": 952.2571563720703,
+      "details": "[81\u2717, 83\u2717, 81\u2717] (0/3 valid)",
+      "error": null
+    },
+    {
+      "test_name": "Compliance: long (350-500)",
+      "category": "Character Limits",
+      "passed": true,
+      "duration_ms": 4020.8425521850586,
+      "details": "[572\u2717, 373\u2713, 412\u2713] (2/3 valid)",
+      "error": null
+    },
+    {
+      "test_name": "No banned terms: short",
+      "category": "Banned Terms",
+      "passed": true,
+      "duration_ms": 269.84715461730957,
+      "details": "No banned terms",
+      "error": null
+    },
+    {
+      "test_name": "No banned terms: medium",
+      "category": "Banned Terms",
+      "passed": true,
+      "duration_ms": 452.61263847351074,
+      "details": "No banned terms",
+      "error": null
+    },
+    {
+      "test_name": "No banned terms: long",
+      "category": "Banned Terms",
+      "passed": true,
+      "duration_ms": 878.6904811859131,
+      "details": "No banned terms",
+      "error": null
+    },
+    {
+      "test_name": "Empty features validation",
+      "category": "Edge Cases",
+      "passed": true,
+      "duration_ms": 0.028371810913085938,
+      "details": "Correctly rejected empty features",
+      "error": null
+    },
+    {
+      "test_name": "Very long product name",
+      "category": "Edge Cases",
+      "passed": true,
+      "duration_ms": 150.1932144165039,
+      "details": "53 chars",
+      "error": null
+    },
+    {
+      "test_name": "Special characters in features",
+      "category": "Edge Cases",
+      "passed": true,
+      "duration_ms": 454.18787002563477,
+      "details": "92 chars",
+      "error": null
+    },
+    {
+      "test_name": "Unicode in input",
+      "category": "Edge Cases",
+      "passed": true,
+      "duration_ms": 210.83521842956543,
+      "details": "32 chars",
+      "error": null
+    }
+  ]
+}

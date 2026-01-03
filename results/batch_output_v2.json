@@ -1,0 +1,132 @@
+{
+  "results": [
+    {
+      "product": {
+        "name": "ErgoMax Pro Wireless Mouse",
+        "features": [
+          "Bluetooth 5.0 connectivity",
+          "Ergonomic contoured design",
+          "4000 DPI optical sensor",
+          "Silent click buttons",
+          "USB-C fast charging"
+        ],
+        "category": "Computer Peripherals"
+      },
+      "descriptions": {
+        "short": {
+          "tier": "short",
+          "content": "ErgoMax Pro Wireless Mouse: Bluetooth 5.0, ergonomic design, 4000 DPI, silent clicks, USB-C charge.",
+          "char_count": 99,
+          "within_limits": true,
+          "target_range": "50-100",
+          "tokens_used": 313
+        },
+        "medium": {
+          "tier": "medium",
+          "content": "The ErgoMax Pro Wireless Mouse is designed for comfort and efficiency. It offers Bluetooth 5.0 and a 4000 DPI sensor. Silent click buttons and USB-C fast charging enhance usability.",
+          "char_count": 181,
+          "within_limits": true,
+          "target_range": "150-300",
+          "tokens_used": 383
+        },
+        "long": {
+          "tier": "long",
+          "content": "The ErgoMax Pro Wireless Mouse is designed to enhance user comfort and efficiency with its ergonomic contoured shape and Bluetooth 5.0 connectivity, offering a seamless wireless experience. Equipped with a 4000 DPI optical sensor, it ensures precise cursor control, while silent click buttons reduce noise during use. Fast USB-C charging adds convenience, allowing quick power-ups without lengthy wait times.\n\nThis mouse supports various operating systems and is ideal for professionals requiring high precision and comfort, such as graphic designers and programmers. Its durable build and versatile connectivity make it suitable for both home and office environments, providing a reliable and efficient tool for daily computing tasks.",
+          "char_count": 735,
+          "within_limits": true,
+          "target_range": "500-800",
+          "tokens_used": 490
+        }
+      },
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "timestamp": "2026-01-02T16:24:19.451982Z",
+      "all_valid": true
+    },
+    {
+      "product": {
+        "name": "CloudSync NVMe SSD 1TB",
+        "features": [
+          "PCIe 4.0 x4 interface",
+          "7000 MB/s sequential read",
+          "5000 MB/s sequential write",
+          "TLC NAND flash",
+          "DRAM cache buffer"
+        ],
+        "category": "Storage Devices"
+      },
+      "descriptions": {
+        "short": {
+          "tier": "short",
+          "content": "CloudSync NVMe SSD 1TB, PCIe 4.0, 7000 MB/s read, 5000 MB/s write",
+          "char_count": 65,
+          "within_limits": true,
+          "target_range": "50-100",
+          "tokens_used": 322
+        },
+        "medium": {
+          "tier": "medium",
+          "content": "The CloudSync NVMe SSD 1TB offers PCIe 4.0 x4 interface with 7000 MB/s read speeds. Equipped with DRAM cache, it ensures swift data access and transfers.",
+          "char_count": 153,
+          "within_limits": true,
+          "target_range": "150-300",
+          "tokens_used": 393
+        },
+        "long": {
+          "tier": "long",
+          "content": "The CloudSync NVMe SSD 1TB is designed for high-performance data storage, offering a PCIe 4.0 x4 interface that supports up to 7000 MB/s sequential read speeds and 5000 MB/s sequential write speeds. Its TLC NAND flash paired with a DRAM cache buffer ensures fast data access and sustained performance. Ideal for demanding applications such as video editing, gaming, and large-scale data transfers, this SSD delivers reliable and efficient storage solutions for professionals and enthusiasts alike.\n\nThis SSD boasts advanced technical specifications including a PCIe 4.0 x4 interface, which significantly enhances data transfer rates. The combination of 7000 MB/s read and 5000 MB/s write speeds ensures swift operations. The use of TLC NAND flash provides ample storage capacity while maintaining reliability, and the DRAM cache buffer improves performance by caching frequently accessed data.\n\nSuitable for high-performance computing environments, this SSD excels in scenarios requiring rapid data processing and storage. Whether for professional workstations, gaming PCs, or servers, the CloudSync NVMe SSD 1TB offers unparalleled speed and efficiency, making it an essential component for any system demanding top-tier storage capabilities.",
+          "char_count": 1243,
+          "within_limits": false,
+          "target_range": "500-800",
+          "tokens_used": 610
+        }
+      },
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "timestamp": "2026-01-02T16:24:25.973021Z",
+      "all_valid": false
+    },
+    {
+      "product": {
+        "name": "AirPure HEPA Filter",
+        "features": [
+          "True HEPA H13 filtration",
+          "Activated carbon layer",
+          "360-degree air intake",
+          "Smart air quality sensor",
+          "Whisper-quiet operation"
+        ],
+        "category": "Home Appliances"
+      },
+      "descriptions": {
+        "short": {
+          "tier": "short",
+          "content": "True HEPA H13 filter with activated carbon, smart sensor, whisper-quiet.",
+          "char_count": 72,
+          "within_limits": true,
+          "target_range": "50-100",
+          "tokens_used": 298
+        },
+        "medium": {
+          "tier": "medium",
+          "content": "The AirPure HEPA Filter offers True HEPA H13 filtration with an activated carbon layer for superior air purification. Its 360-degree air intake and smart sensor ensure optimal performance. Whisper-quiet operation enhances comfort.",
+          "char_count": 230,
+          "within_limits": true,
+          "target_range": "150-300",
+          "tokens_used": 385
+        },
+        "long": {
+          "tier": "long",
+          "content": "The AirPure HEPA Filter is designed to provide superior air purification for your home. With True HEPA H13 filtration, it captures 99.97% of particles as small as 0.3 microns, including pollen, dust, and smoke. The addition of an activated carbon layer effectively removes odors and volatile organic compounds. Featuring a 360-degree air intake, the filter ensures consistent air flow throughout your space. A smart air quality sensor monitors the environment, adjusting performance accordingly. Its whisper-quiet operation allows it to run unnoticed during the night or while you work.\n\nKey technical specifications include a filter lifespan indicator, automatic mode for optimal energy use, and a sleek design that fits seamlessly into any room. The AirPure HEPA Filter is ideal for allergy sufferers, pet owners, and anyone concerned about indoor air quality. It enhances respiratory health by reducing allergens and pollutants, making it perfect for families, offices, and bedrooms.",
+          "char_count": 986,
+          "within_limits": false,
+          "target_range": "500-800",
+          "tokens_used": 552
+        }
+      },
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "timestamp": "2026-01-02T16:24:31.288199Z",
+      "all_valid": false
+    }
+  ],
+  "total_products": 3,
+  "all_valid": false
+}

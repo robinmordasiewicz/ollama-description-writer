@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "name": "ErgoMax Pro Wireless Mouse",
+      "features": [
+        "Bluetooth 5.0 connectivity",
+        "Ergonomic contoured design",
+        "4000 DPI optical sensor",
+        "Silent click buttons",
+        "USB-C fast charging"
+      ],
+      "category": "Computer Peripherals"
+    },
+    {
+      "name": "CloudSync NVMe SSD 1TB",
+      "features": [
+        "PCIe 4.0 x4 interface",
+        "7000 MB/s sequential read",
+        "5000 MB/s sequential write",
+        "TLC NAND flash",
+        "DRAM cache buffer"
+      ],
+      "category": "Storage Devices"
+    },
+    {
+      "name": "AirPure HEPA Filter",
+      "features": [
+        "True HEPA H13 filtration",
+        "Activated carbon layer",
+        "360-degree air intake",
+        "Smart air quality sensor",
+        "Whisper-quiet operation"
+      ],
+      "category": "Home Appliances"
+    }
+  ],
+  "tiers": ["short", "medium", "long"],
+  "settings": {
+    "temperature": 0.3,
+    "model": "Qwen/Qwen2.5-7B-Instruct"
+  }
+}

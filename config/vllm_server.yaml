@@ -1,0 +1,38 @@
+# vLLM Server Configuration with MCP Support
+# Usage: ./scripts/vllm_server.sh start
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  log_file: "/tmp/vllm_mcp.log"
+
+model:
+  name: "Qwen/Qwen2.5-7B-Instruct"
+  dtype: "half"
+  max_model_len: 4096
+  gpu_memory_utilization: 0.95
+
+mcp:
+  enabled: true
+  tool_call_parser: "hermes"
+  tool_server: "localhost:8080"  # f5xc-api-mcp via mcp-proxy bridge
+
+generation:
+  temperature: 0.3
+  top_p: 0.9
+  max_tokens: 500
+
+# Description tier limits (aligned with f5xc-api-enriched)
+tiers:
+  short:
+    min_chars: 35
+    max_chars: 60
+    max_tokens: 25
+  medium:
+    min_chars: 100
+    max_chars: 150
+    max_tokens: 60
+  long:
+    min_chars: 350
+    max_chars: 500
+    max_tokens: 200

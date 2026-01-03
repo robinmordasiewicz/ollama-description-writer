@@ -1,0 +1,23 @@
+# MCP Bridge Configuration for f5xc-api-mcp
+# Bridges stdio-based f5xc-api-mcp to HTTP SSE for vLLM integration
+
+bridge:
+  host: "0.0.0.0"
+  port: 8080
+  log_file: "/tmp/mcp_bridge.log"
+
+server:
+  command: "npx"
+  args: ["@robinmordasiewicz/f5xc-api-mcp"]
+
+# Environment variables passed to the MCP server
+# These can be set via environment or overridden here
+env:
+  # F5XC_API_URL: "https://f5-amer-ent.console.ves.volterra.io"
+  # F5XC_API_TOKEN: "<token>"  # Don't store tokens in config files
+  # F5XC_PROFILE: "f5-amer-ent"  # Use profile-based auth instead
+
+# MCP Server Info
+# - 1500+ API tools across 23 domains
+# - Load Balancing, Networking, Security, WAF, DNS, Monitoring
+# - Provides: API execution, xcsh CLI commands, Terraform HCL examples
