@@ -15,7 +15,7 @@ model:
 mcp:
   enabled: true
   tool_call_parser: "hermes"
-  tool_server: "localhost:8080"  # f5xc-api-mcp via mcp-proxy bridge
+  tool_server: "localhost:8080"  # f5xc-api-mcp native HTTP/SSE
 
 generation:
   temperature: 0.3

@@ -7,7 +7,7 @@ set -e
 # Configuration
 MODEL="Qwen/Qwen2.5-7B-Instruct"
 PORT=8000
-TOOL_SERVER="${VLLM_TOOL_SERVER:-localhost:8080}"  # f5xc-api-mcp via mcp-proxy
+TOOL_SERVER="${VLLM_TOOL_SERVER:-localhost:8080}"  # f5xc-api-mcp native HTTP/SSE
 LOG_FILE="/tmp/vllm_mcp.log"
 PID_FILE="/tmp/vllm_mcp.pid"
 
@@ -193,7 +193,7 @@ show_help() {
     echo ""
     echo "MCP Settings:"
     echo "  Tool parser: hermes"
-    echo "  Tool server: ${TOOL_SERVER} (f5xc-api-mcp via mcp-proxy)"
+    echo "  Tool server: ${TOOL_SERVER} (f5xc-api-mcp native HTTP/SSE)"
     echo ""
     echo "Environment Variables:"
     echo "  VLLM_TOOL_SERVER  Override tool server (default: localhost:8080)"

@@ -1,14 +1,12 @@
-# MCP Bridge Configuration for f5xc-api-mcp
-# Bridges stdio-based f5xc-api-mcp to HTTP SSE for vLLM integration
+# MCP Server Configuration for f5xc-api-mcp
+# Uses native HTTP/SSE mode with SSEServerTransport for vLLM integration
 
-bridge:
+server:
   host: "0.0.0.0"
   port: 8080
   log_file: "/tmp/mcp_bridge.log"
-
-server:
-  command: "npx"
-  args: ["@robinmordasiewicz/f5xc-api-mcp"]
+  command: "node"
+  args: ["/home/robin/GIT/f5xc-api-mcp/dist/index.js", "--http", "--port", "8080"]
 
 # Environment variables passed to the MCP server
 # These can be set via environment or overridden here
